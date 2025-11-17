@@ -1,0 +1,24 @@
+# ───────── Hugo ─────────
+public/
+resources/
+hugo_stats.json
+.hugo_build.lock
+
+# ───────── SO ─────────
+.DS_Store
+Thumbs.db
+
+# ───────── IDEs ─────────
+.idea/
+.vscode/
+*.code-workspace
+
+# ───────── Logs / varios ─────────
+*.log
+
+# ───────── Node (por si usas cosas de frontend) ─────────
+node_modules/
+npm-debug.log*
+yarn.lock
+package-lock.json
+pnpm-lock.yaml
