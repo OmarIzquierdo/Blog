@@ -4,20 +4,18 @@ title = 'Omar Izquierdo'
 theme = 'poison'
 
 [params]
-    brand = "Omar Izquierdo"                      # name of your site - appears in the sidebar
-    # remote_brand_image = 'https://github.com/USERNAME.png' # path to a remote file
-    brand_image = "/logo.png"    # path to the image shown in the sidebar
-    description = "Software Developer" # Used as default meta description if not specified in front matter
-    dark_mode = false                      # optional - defaults to false
-    favicon = "/logo.png"             # path to favicon (defaults to favicon.png)
+    brand = "Omar Izquierdo"
+    brand_image = "/logo.png"
+    description = "Software Developer"
+    dark_mode = false
+    favicon = "/logo.png"
 
     menu = [
-        {Name = "About", URL = "/about/", HasChildren = false},
-        {Name = "Cibersecurity", URL = "/tags/cibersecurity/", Pre = "Recent", HasChildren = true, Limit = 5},
-        {Name = "Posts", URL = "/posts/", Pre = "Recent", HasChildren = true, Limit = 5},
+        { Name = "About", URL = "/about/", HasChildren = false },
+        { Name = "Cibersecurity", URL = "/tags/cibersecurity/", Pre = "Recent", HasChildren = true, Limit = 5 },
+        { Name = "Posts", URL = "/posts/", Pre = "Recent", HasChildren = true, Limit = 5 },
     ]
 
-
     github_url = "https://github.com/OmarIzquierdo"
-    linkedin_url = "https://www.linkedin.com/in/%F0%9F%90%BC-omar-i-97531b263/"
+    linkedin_url = "https://www.linkedin.com/in/omar-izquierdo-97531b263"
     x_url = "https://twitter.com/0x1_dev"
