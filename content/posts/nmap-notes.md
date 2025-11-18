@@ -1,10 +1,9 @@
 +++
 title = 'Nmap Notes for eJPT Certification'
 date = 2025-11-18T01:08:54+01:00
-draft = true
+draft = false
 tags = ["EJPT", "Cibersecurity"]
 +++
-
 
 # Nmap Cheatsheet
 
