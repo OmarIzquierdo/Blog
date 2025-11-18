@@ -6,13 +6,14 @@ theme = 'poison'
 [params]
     brand = "Omar Izquierdo"                      # name of your site - appears in the sidebar
     # remote_brand_image = 'https://github.com/USERNAME.png' # path to a remote file
-    brand_image = "https://i.ibb.co/6WS1q6k/image.png"    # path to the image shown in the sidebar
+    brand_image = "/logo.png"    # path to the image shown in the sidebar
     description = "Software Developer" # Used as default meta description if not specified in front matter
     dark_mode = false                      # optional - defaults to false
-    favicon = "themes/poison/images/favicon-32x32.png"             # path to favicon (defaults to favicon.png)
+    favicon = "/logo.png"             # path to favicon (defaults to favicon.png)
 
     menu = [
         {Name = "About", URL = "/about/", HasChildren = false},
+        {Name = "Cibersecurity", URL = "/tags/Cibersecurity/", Pre = "Recent", HasChildren = true, Limit = 5},
         {Name = "Posts", URL = "/posts/", Pre = "Recent", HasChildren = true, Limit = 5},
     ]
 
