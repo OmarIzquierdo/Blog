@@ -5,18 +5,6 @@ draft = false
 tags = ["EJPT", "Cibersecurity"]
 +++
 
-# Nmap Notes for eJPT Certification
-
-## Index
-
-- [Network device discovery](#network-device-discovery)
-- [OS detection from IP](#os-detection-from-ip)
-- [Open ports scanning](#open-ports-scanning)
-- [Stealth port scan (IDS evasion)](#stealth-port-scan-ids-evasion)
-- [Service discovery on open ports](#service-discovery-on-open-ports)
-
----
-
 ## Network device discovery
 
 ```bash
