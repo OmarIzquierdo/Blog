@@ -11,7 +11,7 @@ tags = ["EJPT", "Cibersecurity"]
 
 - [Network device discovery](#network-device-discovery)
 - [OS detection from IP](#os-detection-from-ip)
-- [Open ports scanning](#open-port-scanning)
+- [Open ports scanning](#open-ports-scanning)
 - [Stealth port scan (IDS evasion)](#stealth-port-scan-ids-evasion)
 - [Service discovery on open ports](#service-discovery-on-open-ports)
 
@@ -23,6 +23,11 @@ tags = ["EJPT", "Cibersecurity"]
 nmap -sn <IP range>
 nmap -sn <IP range> | grep -oP '\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}' | sort
 ```
+<details>
+  <summary><strong>Notes</strong></summary>
+
+The `-sn` option in Nmap runs a ping scan: it only checks which hosts are up, without scanning any ports.
+</details>
 
 ---
 
@@ -35,7 +40,7 @@ nmap -O <IP>
 <details>
   <summary><strong>Notes</strong></summary>
 
-This command is too aggressive. Avoid this for sensible networks.
+The `-O` option enables OS detection by sending multiple probes and analyzing responses to guess the target’s operating system. It’s quite aggressive, generates noticeable traffic, and can trigger IDS/firewalls or affect unstable devices, so it’s best avoided unless OS fingerprinting is strictly necessary.
 </details>
 
 ---
