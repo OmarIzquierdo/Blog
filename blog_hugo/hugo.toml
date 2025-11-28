@@ -1,4 +1,4 @@
-baseURL = 'https://omarizquierdo.dev/'
+baseURL = 'https://omarizquierdo.dev/blog'
 languageCode = 'en-us'
 title = 'Omar Izquierdo'
 theme = 'poison'

@@ -1,0 +1,74 @@
+name: Deploy Portfolio and Blog
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: true
+          fetch-depth: 0
+
+      # --- CONSTRUCCIÓN DE REACT (PORTAFOLIO) ---
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Install dependencies (React)
+        run: npm ci
+
+      - name: Build React
+        run: npm run build
+
+      # --- CONSTRUCCIÓN DE HUGO (BLOG) ---
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'latest'
+          extended: true
+
+      - name: Build Hugo
+        working-directory: ./blog_hugo
+        run: hugo --minify
+
+      # --- FUSIÓN DE LOS DOS SITIOS ---
+      - name: Merge Blog into Portfolio
+        run: |
+          # Crear la carpeta 'blog' dentro del 'dist' de React
+          mkdir -p dist/blog
+          # Copiar el contenido compilado de Hugo dentro de esa carpeta
+          cp -r blog_hugo/public/* dist/blog/
+
+      # --- SUBIDA A GITHUB PAGES ---
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./dist
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

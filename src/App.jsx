@@ -224,51 +224,54 @@ const TRANSLATIONS = {
   }
 };
 
-// --- DATOS AGRUPADOS (MEJORADOS Y MÁS DETALLADOS) ---
+// --- DATOS AGRUPADOS ---
 const TEST_SUITES = [
   {
-    id: 'suite_domain',
-    name: 'Domain.Architecture.Rules',
+    id: 'skill_set_01',
+    name: 'Craftsmanship_&_Quality.Tests',
     tests: [
-      { id: 'd1', name: 'Should_Enforce_Dependency_Direction', status: 'passing', duration: '4ms' },
-      { id: 'd2', name: 'Entities_Must_Be_Pure_And_Agnostic', status: 'passing', duration: '12ms' },
-      { id: 'd3', name: 'Value_Objects_Should_Be_Immutable', status: 'passing', duration: '2ms' },
-      { id: 'd4', name: 'Aggregates_Must_Maintain_Invariants', status: 'passing', duration: '8ms' },
-      { id: 'd5', name: 'Domain_Events_Should_Be_Raised', status: 'passing', duration: '5ms' },
-      { id: 'd6', name: 'Services_Should_Be_Stateless', status: 'passing', duration: '3ms' }
+      { id: 'c1', name: 'Applies_Clean_Code', status: 'passing', duration: '4ms' },
+      { id: 'c2', name: 'Follow_TDD_Practices', status: 'passing', duration: '12ms' },
+      { id: 'c3', name: 'Rely_On_SOLID_Principles', status: 'passing', duration: '2ms' },
+      { id: 'c4', name: 'Refactors_Continuously', status: 'passing', duration: '8ms' },
+      { id: 'c5', name: 'Delivers_Small_Releases', status: 'passing', duration: '5ms' },
+      { id: 'c6', name: 'Simplifies_Design_Logic', status: 'passing', duration: '3ms' }
     ]
   },
   {
-    id: 'suite_infrastructure',
-    name: 'Infra.Persistence.Integration',
+    id: 'skill_set_02',
+    name: 'Architecture_&_Design.Tests',
     tests: [
-      { id: 'i1', name: 'Repo_Should_Persist_Aggregate_Root', status: 'passing', duration: '45ms' },
-      { id: 'i2', name: 'Transaction_Must_Rollback_On_Error', status: 'passing', duration: '22ms' },
-      { id: 'i3', name: 'Concurrency_Token_Prevents_Race_Cond', status: 'passing', duration: '18ms' },
-      { id: 'i4', name: 'Query_Spec_Should_Return_Correct_Data', status: 'passing', duration: '30ms' },
-      { id: 'i5', name: 'Cache_Should_Invalidate_On_Update', status: 'passing', duration: '15ms' }
+      { id: 'a1', name: 'Enforces_Hexagonal_Architecture', status: 'passing', duration: '45ms' },
+      { id: 'a2', name: 'Isolates_Domain_Logic', status: 'passing', duration: '22ms' },
+      { id: 'a3', name: 'Decouples_Infrastructure', status: 'passing', duration: '18ms' },
+      { id: 'a4', name: 'Implements_Design_Patterns', status: 'passing', duration: '30ms' },
+      { id: 'a5', name: 'Encapsulates_Business_Rules', status: 'passing', duration: '7ms' },
+      { id: 'a6', name: 'Implements_Solid_Principles_When_Needed', status: 'passing', duration: '14ms' },
     ]
   },
   {
-    id: 'suite_security',
-    name: 'Security.AccessControl.Tests',
+    id: 'skill_set_03',
+    name: 'Security.Security_&_Ops.Tests',
     tests: [
-      { id: 's1', name: 'Should_Deny_Access_To_Anonymous_User', status: 'passing', duration: '12ms' },
-      { id: 's2', name: 'Jwt_Token_Must_Have_Valid_Signature', status: 'passing', duration: '1ms' },
-      { id: 's3', name: 'Input_Sanitizer_Should_Block_XSS', status: 'passing', duration: '2ms' },
-      { id: 's4', name: 'Admin_Routes_Require_Elevated_Role', status: 'passing', duration: '4ms' },
-      { id: 's5', name: 'Sensitive_Data_Must_Be_Encrypted', status: 'passing', duration: '8ms' }
+      { id: 's1', name: 'Mitigates_OWASP_Risks', status: 'passing', duration: '12ms' },
+      { id: 's2', name: 'Automates_CI_CD', status: 'passing', duration: '1ms' },
+      { id: 's3', name: 'Traces_Audit_Logs', status: 'passing', duration: '2ms' },
+      { id: 's4', name: 'Manages_Secrets_Safely', status: 'passing', duration: '4ms' },
+      { id: 's5', name: 'Encrypts_Sensitive_Payloads', status: 'passing', duration: '8ms' },
+      { id: 's6', name: 'Secures_API_Endpoints', status: 'passing', duration: '3ms' }
     ]
   },
   {
-    id: 'suite_devops',
-    name: 'DevOps.Pipelines.Validation',
+    id: 'skill_set_04',
+    name: 'Core_Tech_Stack.Tests',
     tests: [
-      { id: 'dp1', name: 'Docker_Image_Should_Pass_Scan', status: 'passing', duration: '180ms' },
-      { id: 'dp2', name: 'Unit_Tests_Must_Pass_Before_Merge', status: 'passing', duration: '45ms' },
-      { id: 'dp3', name: 'Integration_Tests_Run_On_Staging', status: 'passing', duration: '210ms' },
-      { id: 'dp4', name: 'Linter_Should_Enforce_Style_Guide', status: 'passing', duration: '35ms' },
-      { id: 'dp5', name: 'Health_Check_Returns_200_OK', status: 'passing', duration: '12ms' }
+      { id: 'dp1', name: 'Mastered_DotNet_Framework', status: 'passing', duration: '180ms' },
+      { id: 'dp2', name: 'Writes_Idiomatic_CSharp', status: 'passing', duration: '45ms' },
+      { id: 'dp3', name: 'Contributes_OpenSource', status: 'passing', duration: '21ms' },
+      { id: 'dp4', name: 'Designs_Restful_APIs', status: 'passing', duration: '5ms' },
+      { id: 'dp5', name: 'Optimizes_Async_Await', status: 'passing', duration: '12ms' },
+      { id: 'dp6', name: 'Handles_Exceptions_Gracefully', status: 'passing', duration: '2ms' }
     ]
   }
 ];
@@ -447,7 +450,7 @@ const SystemMonitor = ({ t }) => {
           repos: userData.public_repos,
           followers: userData.followers,
           stars: totalStars,
-          years: yearsActive.toFixed(1), // Store only the number
+          years: yearsActive.toFixed(1),
           loading: false
         });
 
@@ -556,7 +559,7 @@ const SystemMonitor = ({ t }) => {
   );
 };
 
-// --- COMPONENTE TEST RUNNER PAGINADO (MEJORADO) ---
+// --- COMPONENTE TEST RUNNER PAGINADO ---
 const PaginatedTestRunner = ({ t }) => {
   const [currentPage, setCurrentPage] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
@@ -861,7 +864,7 @@ export default function Portfolio() {
                 <a href="#about" className="hover:text-emerald-400 transition-colors px-3 py-2 rounded-md text-sm font-medium">{t.nav.about}</a>
                 <a href="#projects" className="hover:text-emerald-400 transition-colors px-3 py-2 rounded-md text-sm font-medium">{t.nav.projects}</a>
                 <a href="#test-runner" className="hover:text-emerald-400 transition-colors px-3 py-2 rounded-md text-sm font-medium">{t.nav.capabilities}</a>
-                <a href="https://omarizquierdo.dev/" target="_blank" className="bg-emerald-500/10 text-emerald-400 border border-emerald-500/50 hover:bg-emerald-500 hover:text-white transition-all px-4 py-2 rounded-md text-sm font-bold flex items-center gap-2">
+                <a href="https://omarizquierdo.dev/blog" target="_blank" className="bg-emerald-500/10 text-emerald-400 border border-emerald-500/50 hover:bg-emerald-500 hover:text-white transition-all px-4 py-2 rounded-md text-sm font-bold flex items-center gap-2">
                   <Rss className="w-4 h-4" /> {t.nav.blog}
                 </a>
               </div>
@@ -884,7 +887,7 @@ export default function Portfolio() {
               <a href="#about" onClick={() => setIsMenuOpen(false)} className="block px-3 py-2 rounded-md text-base font-medium hover:bg-slate-800">{t.nav.about}</a>
               <a href="#projects" onClick={() => setIsMenuOpen(false)} className="block px-3 py-2 rounded-md text-base font-medium hover:bg-slate-800">{t.nav.projects}</a>
               <a href="#test-runner" onClick={() => setIsMenuOpen(false)} className="block px-3 py-2 rounded-md text-base font-medium hover:bg-slate-800">{t.nav.capabilities}</a>
-              <a href="https://omarizquierdo.dev/" className="block px-3 py-2 text-emerald-400 font-bold">{t.nav.blog}</a>
+              <a href="https://omarizquierdo.dev/blog" className="block px-3 py-2 text-emerald-400 font-bold">{t.nav.blog}</a>
             </div>
           </div>
         )}
@@ -968,7 +971,7 @@ export default function Portfolio() {
               Github
             </a>
             <a
-              href="https://omarizquierdo.dev/"
+              href="https://omarizquierdo.dev/blog"
               target="_blank"
               className="flex items-center gap-2 px-4 py-3 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-bold transition-all shadow-[0_0_20px_rgba(16,185,129,0.3)] hover:shadow-[0_0_30px_rgba(16,185,129,0.5)]"
             >
