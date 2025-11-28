@@ -11,9 +11,9 @@ theme = 'poison'
     favicon = "/blog/logo.png"
 
     menu = [
-        { Name = "About", URL = "/blog/about/", HasChildren = false },
+       {{/* { Name = "About", URL = "/blog/tagsabout/", HasChildren = false }, */}}
         { Name = "Cibersecurity", URL = "/blog/tags/cibersecurity/", Pre = "Recent", HasChildren = true, Limit = 5 },
-        { Name = "Posts", URL = "/blog/posts/", Pre = "Recent", HasChildren = true, Limit = 5 },
+        { Name = "Posts", URL = "/blog/tags/posts/", Pre = "Recent", HasChildren = true, Limit = 5 },
     ]
 
     github_url = "https://github.com/OmarIzquierdo"
