@@ -1,21 +1,18 @@
 baseURL = 'https://omarizquierdo.dev/blog/'
+canonifyURLs = true
 languageCode = 'en-us'
 title = 'Omar Izquierdo'
 theme = 'poison'
 
 [params]
     brand = "Omar Izquierdo"
-    brand_image = "/blog/logo.png"
+    brand_image = "/logo.png" 
     description = "Software Developer"
     dark_mode = false
-    favicon = "/blog/logo.png"
+    favicon = "/logo.png"
 
     menu = [
         { Name = "About", URL = "/about/", HasChildren = false },
         { Name = "Cibersecurity", URL = "/tags/cibersecurity/", Pre = "Recent", HasChildren = true, Limit = 5 },
         { Name = "Posts", URL = "/posts/", Pre = "Recent", HasChildren = true, Limit = 5 },
     ]
-
-    github_url = "https://github.com/OmarIzquierdo"
-    linkedin_url = "https://www.linkedin.com/in/omar-izquierdo-97531b263"
-    x_url = "https://twitter.com/0x1_dev"
