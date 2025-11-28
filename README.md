@@ -1,16 +1,32 @@
-# React + Vite
+# 👨‍💻 Omar Izquierdo | Portfolio & Blog
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
+![Hugo](https://img.shields.io/badge/Hugo-broadway?style=for-the-badge&logo=hugo)
+![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
 
-Currently, two official plugins are available:
+> **A hybrid web architecture:** A high-performance Portfolio built with React (Vite) seamlessly integrated with a Hugo-powered Blog.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 About The Project
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Welcome to my personal slice of the internet. This repository is unique because it combines the best of two worlds:
+1.  **The Portfolio (Root):** A dynamic Single Page Application (SPA) built with **React + Vite** for a modern, interactive showcase of my work.
+2.  **The Blog (`/blog`):** A static, blazing-fast content engine powered by **Hugo**, perfect for SEO and long-form writing.
 
-## Expanding the ESLint configuration
+Both projects live in this monorepo and are built & merged automatically via **GitHub Actions** before being deployed to GitHub Pages.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📂 Architecture
+
+The project structure is designed to keep concerns separated while sharing the same deployment pipeline.
+
+```text
+omarizquierdo.dev/
+├── src/                # ⚛️ React Source Code (Portfolio)
+├── blog_hugo/          # ✍️ Hugo Source Code (Blog)
+├── public/             # 🖼️ React Static Assets
+├── .github/workflows/  # 🤖 CI/CD Pipeline
+├── package.json        # Dependencies for the Portfolio
+└── vite.config.js      # Vite Configuration
