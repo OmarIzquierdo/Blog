@@ -900,6 +900,7 @@ export default function Portfolio() {
         <div className="flex flex-col items-center gap-6 flex-shrink-0">
 
           {/* BADGE "OPEN TO WORK" */}
+          {/* 
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-violet-500/10 border border-violet-500/30 text-violet-300 text-sm font-mono shadow-[0_0_15px_rgba(139,92,246,0.1)]">
             <span className="relative flex h-2 w-2">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-violet-400 opacity-75"></span>
@@ -907,6 +908,7 @@ export default function Portfolio() {
             </span>
             {t.hero.openToWork}
           </div>
+          */}
 
           <div className="relative w-64 h-64 md:w-80 md:h-80">
             <div className="absolute inset-0 bg-gradient-to-tr from-emerald-500 to-violet-500 rounded-full blur-2xl opacity-20 animate-pulse"></div>
